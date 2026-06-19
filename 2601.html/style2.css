@@ -1,0 +1,57 @@
+body {
+    background: linear-gradient(#000000, #FF0000) no-repeat;
+    background-size: cover; /* Ajustado para cobrir a tela toda */
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    height: 100vh; /* Ocupa a altura total da tela */
+    overflow: hidden;
+}
+
+.homem {
+    width: 350px;           /* 'size' não existe, use width e height */
+    height: 350px;
+    position: relative;
+    top: -290px;
+    left: -455px;            /* Defina apenas uma direção horizontal */
+    animation: decima 1s ease-out; 
+}
+
+.digite-senha {
+    color: #ffffff;
+    /* Adicionado deslocamento na sombra (x, y, desfoque, cor) */
+    text-shadow: 2px 2px 10px #000000;
+    font-family: serif;
+    position: relative;
+    margin: 0;
+    animation: decima 1s ease-out;
+}
+
+fieldset {
+    border-radius: 4.5%;
+    animation: decima 1s ease-out;
+}
+
+.submit {
+    position: relative;
+    margin-top: 5px;
+    margin-left: 55px;
+}
+
+form {
+    animation: decima 1s ease-out;
+}
+
+@keyframes decima {
+    from {
+        transform: translateY(-100px); /* Começa 100px acima */
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0); /* Termina na posição original */
+        opacity: 1;
+    }
+}

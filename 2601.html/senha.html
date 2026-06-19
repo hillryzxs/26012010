@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>tesk</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style2.css'>
+</head>
+<body>
+    <div class="digite-senha">
+        <h2>Digite a senha para desbloquear</h2>
+    </div>
+    <fieldset>
+        <form>
+            <div class="senha">
+                <input type="password" placeholder="Senha" id="senha">
+            </div>
+            <div class="submit">
+                <input type="submit" onclick="logar(); return false">
+            </div>
+        </form>
+    </fieldset>
+    <script>
+        function logar(){
+         var senha = document.getElementById("senha").value;
+        if(senha == "1701"){
+            alert("Parabens! Você conseguiu adivinhar a senha")
+            location.href="texto.html";
+        }else
+            alert("Senha incorreta. Tente novamente!");
+        }
+    </script>
+    <div class="homem">
+        <img src="homem-aranha-removebg-preview.png" alt="homemaranha">
+    </div>
+</body>
+</html>
